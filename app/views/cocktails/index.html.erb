@@ -2,6 +2,7 @@
 
 <% @cocktails.each do |cocktail| %>
   <h3><%= link_to cocktail.name, cocktail_path(cocktail) %></h3>
+  <%= cl_image_tag cocktail.photo, width: 50, height: 50, crop: :fill %>
 <% end %>
 
 <%= link_to "Create a new cocktail", new_cocktail_path %>
