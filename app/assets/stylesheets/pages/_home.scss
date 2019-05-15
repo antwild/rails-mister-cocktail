@@ -7,3 +7,26 @@ body {
   display: flex;
   justify-content: center;
 }
+
+.right-contain {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  margin-top: 10vh;
+}
+
+.ingredient-delete {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 10px;
+}
+
+li {
+  display: inline-block;
+}

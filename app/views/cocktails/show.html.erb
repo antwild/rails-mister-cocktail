@@ -1,13 +1,18 @@
-<h1><%= @cocktail.name %></h1>
-<%= cl_image_tag @cocktail.photo, height: 300, width: 400, crop: :fill %>
-
-<h3>Ingredients:</h3>
-<% @cocktail.doses.each do |dose| %>
-      <ul>
-        <li><%= dose.description %> <%= dose.ingredient.name %></li>
-        <%= link_to "Delete?", dose_path(dose), method: :delete%>
-      </ul>
-  <% end %>
+<div class="wrapper">
+  <h1><%= @cocktail.name %></h1>
+  <div class="cocktail-card">
+    <%= cl_image_tag @cocktail.photo, height: 300, width: 400, crop: :fill, class: "cocktail-img" %>
+    <div class="ingredients">
+      <h3>Ingredients:</h3>
+      <% @cocktail.doses.each do |dose| %>
+            <ul class="ingredient-delete">
+              <li><%= dose.description %> <%= dose.ingredient.name %></li>
+              <%= link_to "Delete?", dose_path(dose), method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-danger delete-btn" %>
+            </ul>
+        <% end %>
+    </div>
+  </div>
+</div>
 
 
 <%= simple_form_for [@cocktail, @dose] do |f| %>

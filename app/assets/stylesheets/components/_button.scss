@@ -2,3 +2,11 @@
   margin: 30px auto;
   width: 20vw;
 }
+
+.delete-btn {
+  margin-left: 15px;
+  padding: 0 10px;
+  &:hover {
+    background-color: #8A0D00;
+  }
+}
