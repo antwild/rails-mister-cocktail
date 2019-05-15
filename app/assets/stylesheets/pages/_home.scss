@@ -1,1 +1,9 @@
 // Specific CSS for your home-page
+body {
+  background: linear-gradient(to right, #8e0e00, #1f1c18);
+}
+
+.center-contain {
+  display: flex;
+  justify-content: center;
+}
