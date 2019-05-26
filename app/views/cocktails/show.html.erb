@@ -35,3 +35,4 @@
 <% end %>
 
 <%= link_to "Home", root_path %>
+<%= link_to "Delete?", cocktail_path(@cocktail), method: :delete, data: { confirm: "Deleting cocktail... Are you sure?" }, class: "btn btn-danger delete-btn" %>
