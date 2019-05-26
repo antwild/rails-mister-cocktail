@@ -1,0 +1,20 @@
+.cocktail-form {
+  margin-top: 10vh;
+  color: white;
+  .input {
+    padding: 20px;
+  }
+}
+
+.new-head {
+  display: flex;
+  align-items: center;
+  h2 {
+    display: inline-block;
+    margin: 0 40px 0 0;
+  }
+}
+
+.new-cocktail-button {
+  padding-left: 20px;
+}

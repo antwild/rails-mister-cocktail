@@ -1,22 +1,16 @@
-<div class="container">
-  <div class="row">
-    <div class="col-11 align-self-center body">
-      <div class="banner">
-        <div class="container">
-          <h1>Your Cocktails</h1>
-          <div class="center-contain">
-            <%= link_to "Create a new cocktail", new_cocktail_path, class: "btn btn-info new-cocktail" %>
-          </div>
-        </div>
-      </div>
-
-      <div class="cards">
-        <% @cocktails.each do |cocktail| %>
-          <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= cocktail.photo %>)">
-            <p><%= link_to cocktail.name, cocktail_path(cocktail) %></p>
-          </div>
-        <% end %>
-      </div>
+<div class="banner">
+  <div class="container">
+    <h1>Your Cocktails</h1>
+    <div class="center-contain">
+      <%= link_to "Create a new cocktail", new_cocktail_path, class: "btn btn-info new-cocktail" %>
     </div>
   </div>
+</div>
+
+<div class="cards">
+  <% @cocktails.each do |cocktail| %>
+    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= cocktail.photo %>)">
+      <p><%= link_to cocktail.name, cocktail_path(cocktail) %></p>
+    </div>
+  <% end %>
 </div>
