@@ -30,3 +30,25 @@
 .card-product .card-product-infos {
   padding: 16px;
 }
+
+.card-category a {
+    color: white;
+}
+
+.card-category:hover {
+
+}
+
+.card-category {
+  height: 150px;
+  width: 23vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 3px;
+  p {
+  color: white;
+  margin: 0;
+  }
+}

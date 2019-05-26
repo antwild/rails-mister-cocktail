@@ -3,6 +3,10 @@ body {
   background: linear-gradient(to right, #8e0e00, #1f1c18);
 }
 
+.body {
+  margin: 0 auto;
+}
+
 .center-contain {
   display: flex;
   justify-content: center;
@@ -29,26 +33,6 @@ body {
 
 li {
   display: inline-block;
-}
-
-.card-category a {
-    color: white;
-}
-
-.card-category:hover {
-
-}
-
-.card-category {
-  height: 150px;
-  width: 300px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  p {
-  color: white;
-  margin: 0;
-  }
 }
 
 
